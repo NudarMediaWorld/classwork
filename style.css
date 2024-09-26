@@ -1,45 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.header-sec{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    width: 80vw;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    color:rgb(58, 58, 58);
+  }
+  
+  .header-sec {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    margin: 60px 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px;
     background-color: transparent;
-}
-
-nav ul li{
+    position: relative;
+  }
+  
+  nav ul li {
     list-style-type: none;
     display: inline-block;
     margin-right: 1.7rem;
     font-weight: 500;
     font-size: 1.2rem;
-    a{
-        text-decoration: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff68a0;
+  }
+
+  nav ul li:hover {
+    cursor: pointer;
+    color: rgb(58, 58, 58);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1rem;
+  }
+  
+  .search-box-container {
+    background-color: rgb(222, 222, 222);
+    padding: 6px;
+    width: 15rem;
+    height: 40px;
+    margin-right: 20px;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5px;
+  }
+  
+  .search-box-container input[type="text"] {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .search-box-container input[type="text"]:focus {
+    outline: none;
+  }
+  
+  .search-box-container::placeholder{
+    color: #ff68a0;
+    font-size: 1.2rem;
+    opacity: 40%;
+    padding: 0 0 0.9rem 0;
+  }
+  
+  .logo img {
+    width: 60px;
+    border-radius: 100%;
+  }
+  
+  .hero {
+    display: grid;
+    grid-template-columns: 460px 305px 105px;
+    gap: 10rem;
+  }
+  
+  .circle-bg img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 10rem;
+  }
+  
+  .hero-text h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  
+  .hero-text h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 15rem 1rem;
+  }
+
+.gap {
+    margin-top: 20px;
+    color: rgb(138, 138, 138);
+    transform: scale(1.3);
+  }
+  
+  .profile-pix {
+    margin-right: 2rem;
+    position: relative;
+    bottom: 75px;
+  }
+  
+  .btn-group {
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 8rem;
+    margin-left: 5rem;
+  }
+  
+  .btn {
+    background: linear-gradient(90deg, rgba(255, 114, 114, 1) 0%, rgba(203, 139, 255, 1) 100%);
+    padding: 0.8rem 1.5rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(242, 242, 242);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .btn-hover:hover{
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: translateY(-2px);
     }
-}
-
-.search-box input[type="text"]{
-        border: 2px solid #2c3350;
-        background: #f2f2f2;
-        font-size: 1.2rem;
-        height: 30px;
-        width: 70%;
-        border-radius:0.3rem;
-        outline: none;
-        color: #2c3350;
-        padding: 0 8px 0 35px;
-        
-}
-
-.logo img{
-width: 50px;
-}
+  }
+  
+  .hero-text p {
+    color:#ff68a0 ;
+    display: inline-flex;
+    flex-direction: row;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #e21dad;
+    animation: type 5s steps(20) infinite;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0ch;
+    }
+    50% {
+      width: 16ch;
+    }
+  }
+  
