@@ -24,7 +24,7 @@
     align-items: center;
     margin: 40px 20px;
     background-color: transparent;
-    position: relative;
+    /* position: relative; */
   }
   
   nav ul li {
@@ -88,6 +88,7 @@
   }
   
   .circle-bg img{
+    /* transform: scale(1.5ZZ); */
     width: 100%;
     object-fit: cover;
   }
@@ -155,7 +156,7 @@
   .btn-hover:hover{
     transition: transform 0.3s ease;
     &:hover{
-        transform: translateY(-2px);
+        transform: translateY(-3px);
     }
   }
   
@@ -178,4 +179,19 @@
       width: 16ch;
     }
   }
+
+  .facebook:hover{
+    color:#066df5;
+  }
   
+  .twitter:hover{
+    color:#1da1f2;
+  }
+
+  .linkedin:hover{
+    color:#0a66c2;
+  }
+
+  .discord:hover{
+    color:#23272a;
+  }
